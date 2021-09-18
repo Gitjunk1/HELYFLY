@@ -2,11 +2,9 @@
     background-color: $primaryColor;
 
     @include media(md) {
-            box-shadow: 0px 4px 5px black (0, 0, 0, 0.15);
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     }
-    // @media  screen and (min-width: 768px) {
-    //     box-shadow: 0px 4px 5px black (0, 0, 0, 0.15);
-    // }
+
     .container {
         @extend %container;
     }
@@ -17,8 +15,7 @@
         justify-content: space-between;
         align-items: center;
         @include media(md) {
-        // @media  screen and (min-width: 768px) {
-            height: 60px;
+            height: 100px;
         }
     }
 
@@ -30,22 +27,20 @@
     &__logo {
         margin-right: 45px;
         @include media(sm) {
-        // @media  screen and (min-width: 576px) {
             margin-right: 36px;
         }
         @include media(md) {
-        // @media  screen and (min-width: 768px) {
            width: 130px;
-
         }
     }
   
     &__city-phone {
         @include text (14px, 400, 17px, $linkColor);
+
         @include media(sm) {
-        // @media  screen and (min-width: 576px) {
             display: none;
         }
+
 }
 
 &__phone {
@@ -66,11 +61,12 @@
 }
 
 &__user {
-    @media  screen and (min-width: 320px) {
+
+    @include media(md) {
         margin: -16px;
     }
+
     @include media(lg) {
-    // @media  screen and (min-width: 1280px) {
         display: none;
     }
 }
