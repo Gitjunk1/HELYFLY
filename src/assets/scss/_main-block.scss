@@ -15,14 +15,20 @@
         background-size: 139%;
         background-position-x: 48%;
         background-position-y: 49%;
-        height: 840px;
+        // height: 840px;
     }
 
-    @include media(xl) {
-        background-size: 139%;
-        background-position-x: 48%;
-        background-position-y: 49%;
-        height: 840px;
+    // @include media(xl) {
+    //     background-size: 139%;
+    //     background-position-x: 48%;
+    //     background-position-y: 49%;
+    //     height: 840px;
+    // }
+    @include media(xxl) {
+        background-size: 101%;
+        background-position-x: -25%;
+        background-position-y: 62%;
+        // height: 840px
     }
 
     .container {
@@ -58,6 +64,10 @@
             @include text(40px, 700, 48px, $primaryColor);
             max-width: 843px;
             margin-top: 214px;
+            transform: translateX(10px);
+        }
+        @include media(xxl) {
+            transform: translate(10px,-53px);
         }
     }
 
@@ -74,9 +84,13 @@
 
         @include media(lg) {
             margin: 29px 0 12px 0;
-    }
+        }
+        @include media(xxl) {
+            transform: translate(10px, -58px);
+        }
 
-}
+        } 
+
 
     &__btn {
         width: 275px;
@@ -98,6 +112,10 @@
             filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
             transform: translateY(-1px);
         }
+        @include media(xxl) {
+            transform: translate(9px, -61px);
+        }
     }
 
 }
+
