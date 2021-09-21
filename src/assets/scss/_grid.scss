@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    background-color: $primaryColor;
+
+    .container {
+    @extend %container;
+    }
+
+    &__title {
+        @include text(28px, 400, 34px, $textColor); 
+        width: 197px;
+        height: 68px;
+        margin: 38px 0 13px 57px;
+    }
+
+    &__img {
+        width: 290px;
+        height: 197px;
+    }
+
+    &__text {
+        @include text(14px, 400, 20px, $textColor); 
+        margin-top: 23px ;
+    }
+
+    &__name {
+        @include text(14px, 500, 20px, $textColor); 
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 30px 0 30px 0;
+
+        &__name:nth-last-child() {
+            margin-top: 22px;
+        }
+    }
+
+    &__sub-title {
+        margin-right: 11px;
+    }
+}
