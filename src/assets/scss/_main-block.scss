@@ -15,20 +15,14 @@
         background-size: 139%;
         background-position-x: 48%;
         background-position-y: 49%;
-        // height: 840px;
+        
     }
 
-    // @include media(xl) {
-    //     background-size: 139%;
-    //     background-position-x: 48%;
-    //     background-position-y: 49%;
-    //     height: 840px;
-    // }
     @include media(xxl) {
         background-size: 101%;
         background-position-x: -25%;
         background-position-y: 62%;
-        // height: 840px
+        
     }
 
     .container {

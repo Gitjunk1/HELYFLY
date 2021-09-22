@@ -216,15 +216,47 @@ body {
     width: 197px;
     height: 68px;
     margin: 38px 0 13px 57px; }
+    @media (min-width: 576px) {
+      .grid__title {
+        margin: 38px 166px 13px; } }
+    @media (min-width: 768px) {
+      .grid__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 49px;
+        color: #37373F;
+        width: 286px;
+        height: 90px;
+        margin: 50px 206px; } }
   .grid__img {
     width: 290px;
     height: 197px; }
+    @media (min-width: 576px) {
+      .grid__img {
+        width: 506px;
+        height: 340px; } }
+    @media (min-width: 768px) {
+      .grid__img {
+        width: 668px;
+        height: 437px;
+        margin-top: 7px; } }
   .grid__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #37373F;
     margin-top: 23px; }
+    @media (min-width: 576px) {
+      .grid__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #37373F;
+        width: 506px;
+        height: 73px; } }
+    @media (min-width: 768px) {
+      .grid__text {
+        margin-top: 20px; } }
   .grid__name {
     font-weight: 500;
     font-size: 14px;
@@ -234,9 +266,7 @@ body {
     justify-content: start;
     align-items: center;
     margin: 30px 0 30px 0; }
-    .grid__name__name:nth-last-child {
-      margin-top: 22px; }
   .grid__sub-title {
-    margin-right: 11px; }
+    margin-left: 11px; }
 
 /*# sourceMappingURL=style.min.css.map */

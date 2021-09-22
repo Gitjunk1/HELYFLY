@@ -11,16 +11,50 @@
         width: 197px;
         height: 68px;
         margin: 38px 0 13px 57px;
+
+        @include media(sm) {
+            margin: 38px 166px 13px;
+        }
+
+        @include media(md) {
+            @include text(40px, 500, 49px, $textColor); 
+            width: 286px;
+            height: 90px;
+            margin: 50px 206px;
+        }
     }
 
     &__img {
         width: 290px;
         height: 197px;
+
+        @include media(sm) {
+            width: 506px;
+            height: 340px;
+        }
+
+        @include media(md) {
+            width: 668px;
+            height: 437px;
+            margin-top: 7px;
+        }
     }
+
 
     &__text {
         @include text(14px, 400, 20px, $textColor); 
         margin-top: 23px ;
+
+        @include media(sm) {
+            @include text(18px, 400, 26px, $textColor); 
+            width: 506px;
+            height: 73px;
+        }
+
+        @include media(md) {
+            margin-top: 20px;
+
+        }
     }
 
     &__name {
@@ -29,13 +63,9 @@
         justify-content: start;
         align-items: center;
         margin: 30px 0 30px 0;
-
-        &__name:nth-last-child() {
-            margin-top: 22px;
-        }
     }
 
     &__sub-title {
-        margin-right: 11px;
+        margin-left: 11px;
     }
 }
