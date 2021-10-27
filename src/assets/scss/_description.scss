@@ -1,0 +1,161 @@
+.description {
+    background-color: $primaryColor;
+
+    .container {
+    @extend %container;  
+      
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 0 60px;
+
+        @include media(sm) {
+            // padding-bottom: 43px;
+        }
+
+        @include media(md) {
+           padding-top: 50px;
+        }
+
+        @include media(lg) {
+            grid-template-columns: 1fr 1fr;
+            padding: 65px 0 70px;
+        } 
+        
+    }
+
+    &__title {
+        @include text(28px, 400, 34px, $textColor); 
+        text-align: center;
+        width: 197px;
+        margin-bottom: 19px;
+        margin-left: 46px;
+
+        @include media(sm) {
+        }
+
+        @include media(md) {
+            @include text(40px, 500, 49px, $textColor); 
+            width: 286px;
+            margin-bottom: 40px;
+        }
+        
+        @include media(lg) {
+            margin: 6px -17px;
+        }
+
+    }
+
+
+    &__pic {
+        margin-bottom: 30px;
+
+        @include media(lg) {
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-row-end: 3;
+            margin-left: 20px;
+        }
+    }
+
+    &__img {
+        width: 290px;
+
+        @include media(sm) {
+            width: 506px;
+        }
+
+        @include media(md) {
+            width: 668px;
+        }
+
+        @include media(lg) {
+            width: 554px;
+        }
+    }
+
+
+    &__text {
+        @include text(14px, 400, 20px, $textColor); 
+        margin-bottom: 34px;
+
+
+        @include media(sm) {
+            @include text(18px, 400, 26px, $textColor); 
+            width: 506px;
+        }
+        
+        @include media(md) {
+            margin-bottom: 26px;
+        }
+
+    }
+
+
+    &__name {
+        @include text(14px, 500, 20px, $textColor); 
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 20px;
+
+        @include media(md) {
+            margin-bottom: 14px;
+        }
+
+
+
+        @include media(lg) {
+        }
+    }
+
+
+    &__sub-title {
+        margin-left: 12px;
+    }
+
+    &__box {
+        margin-top: 28px;
+    }
+
+    &__box-name {
+        @include text(14px, 500, 20px, $textColor); 
+        display: flex;
+        align-items: center;
+        height: 88px;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+    } 
+
+       .span {
+         &__bold{
+            @include text(18px, 600, 26px, $textColor);
+        }
+
+        @include media(sm) {
+            @include text(18px, 600, 26px, $textColor); 
+          
+        }
+
+        @include media(md) {
+            @include text(18px, 400, 26px, $textColor); 
+            margin-bottom: 46px;
+        }
+    }
+       
+      
+
+    &__box-sub-title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 12px;
+    }
+
+
+    &__box-image {
+        order: 2;
+    }
+}

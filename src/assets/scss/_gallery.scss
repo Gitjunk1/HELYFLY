@@ -1,0 +1,61 @@
+.gallery {
+    background-color: $primaryColor;
+
+    .container {
+        @extend %container;  
+          
+        }
+
+        &__wrapper {
+            @include media(lg) {
+                display: grid;
+            }
+        }
+
+        &__title {
+            @include text(26px, 400, 32px, $textColor); 
+            width: 253px;
+            text-align: center;
+            margin-bottom: 23px;
+
+            @include media(md) {
+                @include text(20px, 500, 29px, $textColor); 
+            }
+
+            @include media(lg) {
+                @include text(28px, 500, 41px, $textColor); 
+                width: 315px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__photo {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+
+            @include media(md) {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 278px 278px;
+                grid-gap: 10px;
+                margin-bottom: 40px;
+            }
+
+            @include media(lg) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        &__link {
+            display: none;
+
+            @include media(md) {
+                @include link(17px, 500, 25px, $linkColor); 
+                display: flex;
+                justify-content: center;
+            } 
+           
+        }
+
+}

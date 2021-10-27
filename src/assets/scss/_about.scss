@@ -1,0 +1,65 @@
+.about {
+    background-color: $primaryColor;
+
+    .container {
+        @extend %container; 
+    }
+
+    .wrapper {
+        padding: 63px 0 40px;
+    }
+
+    &__pic{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 23px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 31px;
+            height: 27px;
+            background: url(../images/heart.svg);
+            position: absolute;
+            top: -13px;
+            right: 0;
+        }
+    }
+
+    &__title {
+        @include text(18px, 500, 22px, $textColor);
+        text-align: center;
+        margin-bottom: 7px;
+
+        &-small {
+            @include text(14px, 400, 21px, $textColor); 
+            text-align: center;
+            margin-bottom: 14px;
+        }
+    } 
+
+    &__link {
+        display: flex;
+        text-align: center;
+        @include text(14px, 500, 21px, $linkColor);
+        width: 229px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+
+    &__heading {
+        @include text(18px, 500, 26px, $textColor);
+        margin-bottom: 10px;
+    }
+    
+    &__desc {
+        @include text(16px, 400, 24px, $textColor);
+    }
+
+    &__link-next {
+        @include text(16px, 500, 23px, $linkColor);
+        text-decoration: none;
+    }
+
+    }
+
